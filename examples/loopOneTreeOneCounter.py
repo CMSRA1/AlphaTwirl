@@ -21,7 +21,7 @@ file = ROOT.TFile.Open(options.inputPath)
 tree = file.Get(options.treeName)
 events = AlphaTwirl.Events.Events(tree, options.nevents)
 
-varNames = ('nJet40', 'nBJetTight40')
+varNames = ('nJet40', 'nBJet40Tight40')
 binnings = (AlphaTwirl.Binning.Echo(), AlphaTwirl.Binning.Echo())
 keyComposer = AlphaTwirl.Counter.GenericKeyComposer(varNames, binnings)
 countMethod = AlphaTwirl.Counter.Counts()
